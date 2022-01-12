@@ -28,7 +28,7 @@ class RegisterUserVC: BaseViewController {
         testImg.image = userImage
         phonrTxtfld.delegate = self
         
-        dialCodeStr = "+973"
+        dialCodeStr = "+1"
         //        firstNameTxtfld.text = "Marwa"
         //        lastNameTxtfld.text = "Gerashi"
         //        phonrTxtfld.text = "34146705"
