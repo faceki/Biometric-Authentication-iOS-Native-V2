@@ -36,7 +36,7 @@ class FinalResultVC: UIViewController {
             DataManager.isUserRegistered = false
             linkLbl.isHidden = true
             startLoaderGif(gifName: "24-approved-checked-outline")
-            resultLbl.text = "WELCOME \(name)"
+            resultLbl.text = "WELCOME\n\(name)"
             resulInfotLbl.text = "\(DataManager.successMeaasge ?? "Process is complete check dashboard for details.")"
         }
         else {
