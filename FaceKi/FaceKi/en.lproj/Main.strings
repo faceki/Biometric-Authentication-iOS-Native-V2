@@ -1,0 +1,58 @@
+
+/* Class = "UILabel"; text = "Your Identity successfully verified"; ObjectID = "3ac-xU-Hte"; */
+"3ac-xU-Hte.text" = "Your Identity successfully verified";
+
+/* Class = "UIButton"; normalTitle = " "; ObjectID = "8Pw-hr-lHw"; */
+"8Pw-hr-lHw.normalTitle" = " ";
+
+/* Class = "UILabel"; text = "Last Name*"; ObjectID = "9Cp-Hp-Qx6"; */
+"9Cp-Hp-Qx6.text" = "Last Name*";
+
+/* Class = "UILabel"; text = "  "; ObjectID = "9Xg-1o-ABK"; */
+"9Xg-1o-ABK.text" = "  ";
+
+/* Class = "UILabel"; text = "SUCCESSFUL"; ObjectID = "EJ1-vO-gUl"; */
+"EJ1-vO-gUl.text" = "SUCCESSFUL";
+
+/* Class = "UIButton"; normalTitle = " "; ObjectID = "FcJ-WT-BVw"; */
+"FcJ-WT-BVw.normalTitle" = " ";
+
+/* Class = "UILabel"; text = "extra information from dash"; ObjectID = "HTn-3G-hfv"; */
+"HTn-3G-hfv.text" = "extra information from dash";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "MKR-PG-V78"; */
+"MKR-PG-V78.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Powered by"; ObjectID = "SqW-lT-INX"; */
+"SqW-lT-INX.text" = "Powered by";
+
+/* Class = "UILabel"; text = "Fit your face in the middle"; ObjectID = "Ugc-0h-yPY"; */
+"Ugc-0h-yPY.text" = "Fit your face in the middle";
+
+/* Class = "UILabel"; text = "Telephone Number*"; ObjectID = "WSu-rT-2fM"; */
+"WSu-rT-2fM.text" = "Telephone Number*";
+
+/* Class = "UILabel"; text = "First Name*"; ObjectID = "YOX-bQ-8Ow"; */
+"YOX-bQ-8Ow.text" = "First Name*";
+
+/* Class = "UILabel"; text = "Sign in with a Selfie"; ObjectID = "Ybo-He-KtY"; */
+"Ybo-He-KtY.text" = "Sign in with a Selfie";
+
+/* Class = "UILabel"; text = "Sign up"; ObjectID = "Zdd-Xd-lXe"; */
+"Zdd-Xd-lXe.text" = "Sign up";
+
+/* Class = "UILabel"; text = "Sign-up"; ObjectID = "aAo-bX-w6w"; */
+"aAo-bX-w6w.text" = "Sign-up";
+
+/* Class = "UILabel"; text = "Take a Selfie"; ObjectID = "aft-fN-nyL"; */
+"aft-fN-nyL.text" = "Take a Selfie";
+
+/* Class = "UILabel"; text = "Don't have a FACEKåI account?"; ObjectID = "fSR-4b-cu8"; */
+"fSR-4b-cu8.text" = "Don't have a FACEKI account?";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "sBL-rZ-P7v"; */
+"sBL-rZ-P7v.text" = "Sign In";
+
+/* Class = "UILabel"; text = "e-Mail*"; ObjectID = "zla-b5-Qva"; */
+"zla-b5-Qva.text" = "e-Mail*";
+

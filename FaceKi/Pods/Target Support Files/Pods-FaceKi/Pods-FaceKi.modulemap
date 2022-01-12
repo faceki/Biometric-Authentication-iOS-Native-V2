@@ -1,0 +1,6 @@
+framework module Pods_FaceKi {
+  umbrella header "Pods-FaceKi-umbrella.h"
+
+  export *
+  module * { export * }
+}

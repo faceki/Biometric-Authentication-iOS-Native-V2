@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Your Identity successfully verified"; ObjectID = "3ac-xU-Hte"; */
+"3ac-xU-Hte.text" = " تم التحقق من هويتك بنجاح";
+
+/* Class = "UIButton"; normalTitle = " "; ObjectID = "8Pw-hr-lHw"; */
+"8Pw-hr-lHw.normalTitle" = " ";
+
+/* Class = "UILabel"; text = "Last Name*"; ObjectID = "9Cp-Hp-Qx6"; */
+"9Cp-Hp-Qx6.text" = " الاسم الاخير*";
+
+/* Class = "UILabel"; text = "  "; ObjectID = "9Xg-1o-ABK"; */
+"9Xg-1o-ABK.text" = "  ";
+
+/* Class = "UILabel"; text = "SUCCESSFUL"; ObjectID = "EJ1-vO-gUl"; */
+"EJ1-vO-gUl.text" = " تم بنجاح";
+
+/* Class = "UIButton"; normalTitle = " "; ObjectID = "FcJ-WT-BVw"; */
+"FcJ-WT-BVw.normalTitle" = " ";
+
+/* Class = "UILabel"; text = "extra information from dash"; ObjectID = "HTn-3G-hfv"; */
+"HTn-3G-hfv.text" = " معلومات اضافية";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "MKR-PG-V78"; */
+"MKR-PG-V78.normalTitle" = " التالي";
+
+/* Class = "UILabel"; text = "Powered by"; ObjectID = "SqW-lT-INX"; */
+"SqW-lT-INX.text" = " مشغل بواسطة";
+
+/* Class = "UILabel"; text = "Fit your face in the middle"; ObjectID = "Ugc-0h-yPY"; */
+"Ugc-0h-yPY.text" = " ضع وجهك في الوسط";
+
+/* Class = "UILabel"; text = "Telephone Number*"; ObjectID = "WSu-rT-2fM"; */
+"WSu-rT-2fM.text" = " رقم الهاتف*";
+
+/* Class = "UILabel"; text = "First Name*"; ObjectID = "YOX-bQ-8Ow"; */
+"YOX-bQ-8Ow.text" = " الاسم الاول*";
+
+/* Class = "UILabel"; text = "Sign in with a Selfie"; ObjectID = "Ybo-He-KtY"; */
+"Ybo-He-KtY.text" = "الدخول للحساب باستخدام السلفي";
+
+/* Class = "UILabel"; text = "Sign up"; ObjectID = "Zdd-Xd-lXe"; */
+"Zdd-Xd-lXe.text" = "التسجيل لاستخدام خيار الدخول بالسلفي";
+
+/* Class = "UILabel"; text = "Sign-up"; ObjectID = "aAo-bX-w6w"; */
+"aAo-bX-w6w.text" = " أشتراك";
+
+/* Class = "UILabel"; text = "Take a Selfie"; ObjectID = "aft-fN-nyL"; */
+"aft-fN-nyL.text" = "التقط صورة";
+
+/* Class = "UILabel"; text = "Don't have a FACEKI account?"; ObjectID = "fSR-4b-cu8"; */
+"fSR-4b-cu8.text" = "ليس لديك حساب على FACEKI؟";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "sBL-rZ-P7v"; */
+"sBL-rZ-P7v.text" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "e-Mail*"; ObjectID = "zla-b5-Qva"; */
+"zla-b5-Qva.text" = " البريد الالكتروني *";
