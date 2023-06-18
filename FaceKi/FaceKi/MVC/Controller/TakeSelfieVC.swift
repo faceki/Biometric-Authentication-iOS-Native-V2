@@ -34,7 +34,9 @@ class TakeSelfieVC: BaseViewController {
         return AVCaptureDevice.default(AVCaptureDevice.DeviceType.builtInWideAngleCamera, for: AVMediaType.video, position: .front)
     }()
     var signIn = ""
-    var name = ""
+    var firstName = ""
+    var lastName = ""
+    var password = ""
     var email = ""
     var mobile = ""
     var dialCodeStr = ""
@@ -82,12 +84,16 @@ class TakeSelfieVC: BaseViewController {
         else{
             self.startLoaderGif(isLoaderStart: true)
         }
-        ApiManager.shared.getAuthTokenApi(email: "demo@faceki.com",
-                                        currentVC: self, onSuccess: { (response) in
+        ApiManager.shared.getAuthTokenApi(clientSecret: DataManager.clientSecret, clientId: DataManager.clientId,
+            currentVC: self, onSuccess: { (response) in
                         print("get User Token Api Hit Response ",response)
                 self.startLoaderGif(isLoaderStart: false)
-                if let token = response["token"] as? String {
+            let data = response["data"] as? [String:Any] ?? [:]
+            
+            print("data token response",data["access_token"] ?? "")
+                if let token = data["access_token"] as? String {
                     DataManager.authorizationTokken = token
+                    
                 }
         })
     }
@@ -178,17 +184,16 @@ class TakeSelfieVC: BaseViewController {
         return .pi * x / 180.0
     }
     //MARK:- registerUserApiHit Api Hit
-    func registerUserApiHit(imageData: Data, email: String, mobile: String, name: String, fileName: String, mimeType: String){
+    func registerUserApiHit(imageData: Data, email: String,password: String, mobile: String, firstName: String,lastName: String, fileName: String, mimeType: String){
         
         var mobileNumber = "\(dialCodeStr)\(mobile)"
         mobileNumber = mobileNumber.replacingOccurrences(of: " ", with: "")
         print("mobileNumber ",mobileNumber)
         
-        let params:[String: Any] = ["client_id": DataManager.deviceTokken!,
-                                    "image": "file.jpg",
+        let params:[String: Any] = ["selfie_image": "file.jpg",
                                     "email":email,
-                                    "mobile_number":mobileNumber,
-                                    "name":name]
+                                    "phoneNumber":mobileNumber,
+                                    "firstName":firstName, "lastName":lastName,"password":password]
         
         //        CommonFunctions.startProgressView(view: self.view)
         AlamoFireWrapper.sharedInstance.MultipartApiHit(action: registrationUrl, imageData: imageData, view: self.view, param: params, withName: "image", fileName: fileName, mimeType: mimeType, onSuccess: { (response) in
@@ -220,7 +225,7 @@ class TakeSelfieVC: BaseViewController {
                     vc.isSuccess = self.isSuccess
                     vc.errorMsg = self.errorMsg
                     DataManager.isSignIn = ""
-                    vc.name = name
+                    vc.name = firstName
                     self.navigationController?.pushViewController(vc, animated: true)
 //
 //                    let vc = Storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
@@ -340,7 +345,7 @@ extension TakeSelfieVC: AVCaptureVideoDataOutputSampleBufferDelegate {
                 imagesData = imageDataFaceImage
             }
             self.startLoaderGif(isLoaderStart: true)
-            self.registerUserApiHit(imageData: imagesData, email: self.email, mobile: self.mobile, name: self.name, fileName: "", mimeType: "")
+            self.registerUserApiHit(imageData: imagesData, email: self.email, password: self.password, mobile: self.mobile,  firstName:self.firstName,lastName:self.lastName, fileName: "", mimeType: "")
         }
         else{
         self.loginUserApiHit(userImage: cropedImage)
@@ -379,7 +384,7 @@ extension TakeSelfieVC: AVCaptureVideoDataOutputSampleBufferDelegate {
     //MARK:- login User Api Hit
     func loginUserApiHit(userImage: UIImage){
         self.isSuccess = true
-        let params:[String: Any] = ["image": "file.jpg"]
+        let params:[String: Any] = ["selfie_image": "selfie_image.jpg"]
         startLoaderGif(isLoaderStart: true)
         
         var imagesData = Data()
@@ -388,7 +393,7 @@ extension TakeSelfieVC: AVCaptureVideoDataOutputSampleBufferDelegate {
         }
         
 //        CommonFunctions.startProgressView(view: self.view)
-        AlamoFireWrapper.sharedInstance.MultipartApiHit(action: logInUrl, imageData: imagesData, view: self.view, param: params, withName: "image", fileName: "", mimeType: "", onSuccess: { (response) in
+        AlamoFireWrapper.sharedInstance.MultipartApiHit(action: logInUrl, imageData: imagesData, view: self.view, param: params, withName: "selfie_image", fileName: "", mimeType: "", onSuccess: { (response) in
             self.startLoaderGif(isLoaderStart: false)
 //            CommonFunctions.dismissProgressView(view: self.view)
             switch(response.result) {
@@ -399,12 +404,11 @@ extension TakeSelfieVC: AVCaptureVideoDataOutputSampleBufferDelegate {
                 self.startLoaderGif(isLoaderStart: false)
                 
                 self.isSuccess = true
-                
-                let error = dictionaryContent["error"] as? String ?? ""
-                let status = dictionaryContent["status"] as? String ?? ""
-                let status2 = dictionaryContent["status"] as? Int ?? -1
+                let statusCode = dictionaryContent["responseCode"] as? Int ?? -1
+                let data = dictionaryContent["data"] as? [String:Any] ?? [:]
+                let isLogdedIn = data["logedIn"] as? Bool ?? false
 
-                if status == "Failed" || status2 == 0 || error == "Authentication failed..." {
+                if  statusCode != 0 ||  isLogdedIn == false {
                     self.isSuccess = false
 
                    let message = dictionaryContent["message"] as? String ?? ""
@@ -421,7 +425,7 @@ extension TakeSelfieVC: AVCaptureVideoDataOutputSampleBufferDelegate {
                 }
 
                 if self.isSuccess == true {
-                    let userDict = dictionaryContent["user"] as? [String:Any] ?? [:]
+                    let userDict = data["user"] as? [String:Any] ?? [:]
                     
                     let vc = Storyboard.instantiateViewController(withIdentifier: "FinalResultVC") as! FinalResultVC
                     vc.dictionaryContent = dictionaryContent

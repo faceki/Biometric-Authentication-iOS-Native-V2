@@ -15,10 +15,12 @@ class RegisterUserVC: BaseViewController {
     @IBOutlet weak var lastNameTxtfld: UITextField!
     @IBOutlet weak var phonrTxtfld: FPNTextField!
     @IBOutlet weak var emailTxtfld: UITextField!
+    @IBOutlet weak var passwordTxtfld: UITextField!
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var lastNameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
     
     var userImage = UIImage()
     var dialCodeStr = String()
@@ -47,46 +49,49 @@ class RegisterUserVC: BaseViewController {
     //MARK:- get User Token Api Hit
     func getUserTokenApiHit(){
         self.startLoaderGif(isLoaderStart: true)
-        ApiManager.shared.getAuthTokenApi(email: "demo@faceki.com",
-                                          currentVC: self, onSuccess: { (response) in
+        ApiManager.shared.getAuthTokenApi(clientSecret: DataManager.clientSecret, clientId: DataManager.clientId,
+            currentVC: self, onSuccess: { (response) in
             print("get User Token Api Hit Response ",response)
-            if let token = response["token"] as? String {
+            let data = response["data"] as? [String:Any] ?? [:]
+            print("data token response",data["access_token"] ?? "")
+            if let token = data["access_token"] as? String {
                 DataManager.authorizationTokken = token
                 
                 if DataManager.isSignIn == "SignIn"{
                     let vc = Storyboard.instantiateViewController(withIdentifier: "TakeSelfieVC") as! TakeSelfieVC
                     let name = "\(self.firstNameTxtfld.text!) \(self.lastNameTxtfld.text!)"
-                    vc.name = name
+                    vc.firstName = self.firstNameTxtfld.text!
+                    vc.lastName = self.lastNameTxtfld.text!
                     vc.email = self.emailTxtfld.text!
+                    vc.password = self.passwordTxtfld.text!
                     vc.mobile = self.phonrTxtfld.text!
                     DataManager.isSignIn = "SignIn"
                     vc.dialCodeStr = self.dialCodeStr
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
                 else{
-                    let name = "\(self.firstNameTxtfld.text!) \(self.lastNameTxtfld.text!)"
+                
                     var imagesData = Data()
                     if let imageDataFaceImage = self.userImage.jpeg(.medium) {
                         imagesData = imageDataFaceImage
                     }
-                    self.registerUserApiHit(imageData: imagesData, email: self.emailTxtfld.text!, mobile: self.phonrTxtfld.text!, name: name, fileName: "", mimeType: "")
+                    self.registerUserApiHit(imageData: imagesData, email: self.emailTxtfld.text!,password: self.passwordTxtfld.text!, mobile: self.phonrTxtfld.text!, firstName: self.firstNameTxtfld.text!, lastName: self.lastNameTxtfld.text!, fileName: "", mimeType: "")
                 }
             }
         })
     }
     
     //MARK:- registerUserApiHit Api Hit
-    func registerUserApiHit(imageData: Data, email: String, mobile: String, name: String, fileName: String, mimeType: String){
+    func registerUserApiHit(imageData: Data, email: String,password: String, mobile: String, firstName: String,lastName: String, fileName: String, mimeType: String){
         
         var mobileNumber = "\(dialCodeStr)\(mobile)"
         mobileNumber = mobileNumber.replacingOccurrences(of: " ", with: "")
         print("mobileNumber ",mobileNumber)
         
-        let params:[String: Any] = ["client_id": DataManager.deviceTokken!,
-                                    "image": "file.jpg",
+        let params:[String: Any] = ["selfie_image": "file.jpg",
                                     "email":email,
-                                    "mobile_number":mobileNumber,
-                                    "name":name]
+                                    "phoneNumber":mobileNumber,
+                                    "firstName":firstName, "lastName":lastName,"password":password]
         
         //        CommonFunctions.startProgressView(view: self.view)
         AlamoFireWrapper.sharedInstance.MultipartApiHit(action: registrationUrl, imageData: imageData, view: self.view, param: params, withName: "image", fileName: fileName, mimeType: mimeType, onSuccess: { (response) in
@@ -169,7 +174,10 @@ class RegisterUserVC: BaseViewController {
             emailLabel.textColor = .red
             isValid = false
         }
-        
+        if(((passwordTxtfld.text!.trimmingCharacters(in: .whitespaces).isEmpty))){
+            passwordLabel.textColor = .red
+            isValid = false
+        }
         return isValid
     }
     

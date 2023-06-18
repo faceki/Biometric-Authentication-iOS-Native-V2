@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "229DAA17-90BB-4D6F-97D3-09755869BC70"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BF263F0-A3B7-4164-A44C-E7448CA2D37A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/VenderClasses/AlamoFireWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "GetApiHit(action:view:onSuccess:onFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21728C8E-77A0-4DB8-9AC2-6AE7EA0CAEA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/TakeSelfieVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "getUserTokenApiHit()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A699156-1258-4976-9100-D5D3414E9E8E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/TakeSelfieVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "getUserTokenApiHit()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5A699156-1258-4976-9100-D5D3414E9E8E - d75f4b9f3fe70316"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; () in FaceKi.TakeSelfieVC.getUserTokenApiHit() -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "5A699156-1258-4976-9100-D5D3414E9E8E - d75f4b9f3fe70316"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; () in FaceKi.TakeSelfieVC.getUserTokenApiHit() -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "464">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8831197B-67F3-4A2E-86C1-D49B7A82498E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/TakeSelfieVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "getUserTokenApiHit()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "788520EF-CF18-416C-B9CD-274B45584B00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/TakeSelfieVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "402"
+            endingLineNumber = "402"
+            landmarkName = "loginUserApiHit(userImage:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "788520EF-CF18-416C-B9CD-274B45584B00 - 1b40ea83859a53ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.TakeSelfieVC.loginUserApiHit(userImage: __C.UIImage) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "402"
+                  endingLineNumber = "402"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  uuid = "788520EF-CF18-416C-B9CD-274B45584B00 - 1b40ea83859a53ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.TakeSelfieVC.loginUserApiHit(userImage: __C.UIImage) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "402"
+                  endingLineNumber = "402"
+                  offsetFromSymbolStart = "344">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5ACC55C0-865A-4ADB-9A10-C2E5AD3EF991"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/TakeSelfieVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "399"
+            endingLineNumber = "399"
+            landmarkName = "loginUserApiHit(userImage:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5ACC55C0-865A-4ADB-9A10-C2E5AD3EF991 - 1b40ea83859a5c4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.TakeSelfieVC.loginUserApiHit(userImage: __C.UIImage) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "399"
+                  endingLineNumber = "399"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "5ACC55C0-865A-4ADB-9A10-C2E5AD3EF991 - 1b40ea83859a5c4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.TakeSelfieVC.loginUserApiHit(userImage: __C.UIImage) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "399"
+                  endingLineNumber = "399"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B454E698-5A22-4C3B-AB44-33B31E80A929"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/VenderClasses/AlamoFireWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "MultipartApiHit(action:imageData:view:param:withName:fileName:mimeType:onSuccess:onFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3450D0F-F478-4C87-B184-44491D0D8A36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/VenderClasses/AlamoFireWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "MultipartApiHit(action:imageData:view:param:withName:fileName:mimeType:onSuccess:onFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0CDFEDF-D50F-4215-9080-87E7B5447D8B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/VenderClasses/AlamoFireWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "MultipartApiHit(action:imageData:view:param:withName:fileName:mimeType:onSuccess:onFailure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C0CDFEDF-D50F-4215-9080-87E7B5447D8B - c3a494aca31c13d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.AlamoFireWrapper.MultipartApiHit(action: Swift.String, imageData: Swift.Optional&lt;Foundation.Data&gt;, view: __C.UIView, param: Swift.Dictionary&lt;Swift.String, Any&gt;, withName: Swift.String, fileName: Swift.String, mimeType: Swift.String, onSuccess: (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; (), onFailure: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/VenderClasses/AlamoFireWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "724">
+               </Location>
+               <Location
+                  uuid = "C0CDFEDF-D50F-4215-9080-87E7B5447D8B - 74132fa7705970b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #2 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.AlamoFireWrapper.MultipartApiHit(action: Swift.String, imageData: Swift.Optional&lt;Foundation.Data&gt;, view: __C.UIView, param: Swift.Dictionary&lt;Swift.String, Any&gt;, withName: Swift.String, fileName: Swift.String, mimeType: Swift.String, onSuccess: (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; (), onFailure: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/VenderClasses/AlamoFireWrapper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "387BAA9D-F5FB-4E91-A7F8-EA1169ADDE4A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/VenderClasses/AlamoFireWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "MultipartApiHit(action:imageData:view:param:withName:fileName:mimeType:onSuccess:onFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C867685-9793-4C3C-89D4-2C001915E8B9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/TakeSelfieVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "411"
+            endingLineNumber = "411"
+            landmarkName = "loginUserApiHit(userImage:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9C867685-9793-4C3C-89D4-2C001915E8B9 - 1b40ea83859a52d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.TakeSelfieVC.loginUserApiHit(userImage: __C.UIImage) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "411"
+                  endingLineNumber = "411"
+                  offsetFromSymbolStart = "1804">
+               </Location>
+               <Location
+                  uuid = "9C867685-9793-4C3C-89D4-2C001915E8B9 - 1b40ea83859a52d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.TakeSelfieVC.loginUserApiHit(userImage: __C.UIImage) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "411"
+                  endingLineNumber = "411"
+                  offsetFromSymbolStart = "1724">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "796AE473-339B-42E3-AD95-D14D30DCFEDC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/TakeSelfieVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "420"
+            endingLineNumber = "420"
+            landmarkName = "loginUserApiHit(userImage:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "796AE473-339B-42E3-AD95-D14D30DCFEDC - 1b40ea83859a51be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.TakeSelfieVC.loginUserApiHit(userImage: __C.UIImage) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "420"
+                  endingLineNumber = "420"
+                  offsetFromSymbolStart = "2492">
+               </Location>
+               <Location
+                  uuid = "796AE473-339B-42E3-AD95-D14D30DCFEDC - 1b40ea83859a51be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in FaceKi.TakeSelfieVC.loginUserApiHit(userImage: __C.UIImage) -&gt; ()"
+                  moduleName = "FaceKi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vj/Documents/Biometric-Authentication-iOS-Native/FaceKi/FaceKi/MVC/Controller/TakeSelfieVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "420"
+                  endingLineNumber = "420"
+                  offsetFromSymbolStart = "2320">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "634C0130-7E49-4B9F-A040-FD93CA4C34FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/RegisterUserVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "getUserTokenApiHit()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6A4C143-BC19-424F-8EDE-58D876B7DB41"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/RegisterUserVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "nextBtnAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C4F7A34-C204-4247-A4EA-CE63DF98A0B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/MVC/Controller/RegisterUserVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "getUserTokenApiHit()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DFE14BF-BA11-4D89-92FB-4E6918601149"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FaceKi/VenderClasses/ApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getAuthTokenApi(clientSecret:clientId:currentVC:onSuccess:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

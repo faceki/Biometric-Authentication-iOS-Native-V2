@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Third-party library for KeyBoard
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.previousNextDisplayMode = .alwaysShow
-        
+        DataManager.clientId = "clientId" // replace here with actual value
+        DataManager.clientSecret = "clientSecret" // replace here with actual value
         if DataManager.isUserRegistered == true {
             getUserTokenApiHit()
         }
@@ -34,10 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //MARK:- get User Token Api Hit
     func getUserTokenApiHit(){
-        ApiManager.shared.getAuthTokenApi(email: DataManager.email ?? "demo@faceki.com",
-                                        currentVC: (self.window?.rootViewController as! UINavigationController), onSuccess: { (response) in
+        ApiManager.shared.getAuthTokenApi(clientSecret: DataManager.clientSecret, clientId: DataManager.clientId,
+            currentVC: (self.window?.rootViewController as! UINavigationController), onSuccess: { (response) in
                         print("get User Token Api Hit Response ",response)
-                if let token = response["token"] as? String {
+            let data = response["data"] as? [String:Any] ?? [:]
+            
+            print("data token response",data["access_token"] ?? "")
+                if let token = data["access_token"] as? String {
                     DataManager.authorizationTokken = token
                     
                 }

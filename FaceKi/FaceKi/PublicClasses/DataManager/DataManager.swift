@@ -220,16 +220,24 @@ class DataManager{
         }
     }
     
-    static var clientId:String? {
+    static var clientId:String {
         set {
             UserDefaults.standard.setValue(newValue, forKey: "ClientId")
             UserDefaults.standard.synchronize()
         }
         get {
-            return UserDefaults.standard.string(forKey: "ClientId")
+            return UserDefaults.standard.string(forKey: "ClientId") ?? "clientId"
         }
     }
-    
+    static var clientSecret:String {
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: "clientSecret")
+            UserDefaults.standard.synchronize()
+        }
+        get {
+            return UserDefaults.standard.string(forKey: "clientSecret") ?? ""
+        }
+    }
     static var confidence:Double? {
         set {
             UserDefaults.standard.setValue(newValue, forKey: "Confidence")

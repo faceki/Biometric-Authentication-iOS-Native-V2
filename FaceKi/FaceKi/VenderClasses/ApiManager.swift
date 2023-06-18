@@ -12,18 +12,12 @@ class ApiManager: NSObject {
     
 
     //MARK:- get Auth token APi Function
-    func getAuthTokenApi(email: String,
+    func getAuthTokenApi(clientSecret: String,
+                         clientId: String,
                       currentVC: UIViewController,
                       onSuccess: @escaping([String:Any]) -> Void) {
-        
-//        let uuid = UUID().uuidString
-        DataManager.deviceTokken = "af7d4790-04a9-11ec-aecf-1dca4d5eaaf0"
-//        print(uuid)
-        let param:[String:Any] = ["client_id": "af7d4790-04a9-11ec-aecf-1dca4d5eaaf0",
-                                  "email": email]
-        print("param ",param)
-        
-        AlamoFireWrapper.sharedInstance.PostApiHit(action: getTokenUrl, param: param, view: currentVC.view, onSuccess: { (response) in
+        DataManager.deviceTokken = clientId
+        AlamoFireWrapper.sharedInstance.GetApiHit(action: getTokenUrl+"?clientId=\(clientId)&clientSecret=\(clientSecret)", view: currentVC.view, onSuccess: { (response) in
             //            print("response ",response)
             CommonFunctions.dismissProgressView(view: currentVC.view)
             switch(response.result) {
